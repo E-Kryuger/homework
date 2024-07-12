@@ -22,7 +22,7 @@ def card_number_generator(start, stop=None):
     """Генератор, который выдает номера банковских карт"""
     cards_numbers = []
 
-    if stop == None:
+    if stop is None:
         stop = start
 
     for i in range(start, stop + 1):
