@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "recent-transactions-widget-v2"
+name = "homework"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Евгения Крюгер <Evgenia.Kryuger@yandex.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
