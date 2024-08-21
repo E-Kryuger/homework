@@ -19,7 +19,7 @@ def list_from_json(path_to_file):
         return []
 
     try:
-        with open(path_to_file) as file:
+        with open(path_to_file, "r", encoding="utf-8") as file:
             transactions_info = json.load(file)
             if isinstance(transactions_info, list):
                 logger.info(f"Файл успешно прочитан: {path_to_file}")
