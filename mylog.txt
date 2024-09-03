@@ -30,3 +30,21 @@ add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 1
 add ok
 add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
 add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
+add error: can only concatenate str (not "int") to str. Inputs: ('12',), {'y': 16}
+add ok
