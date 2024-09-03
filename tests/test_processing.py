@@ -1,6 +1,8 @@
+from collections import Counter
+
 import pytest
 
-from src.processing import filter_by_state, sort_by_date
+from src.processing import count_transactions_by_category, filter_by_description, filter_by_state, sort_by_date
 
 
 @pytest.mark.parametrize(
@@ -115,3 +117,16 @@ def test_filter_by_state(input_list_of_transactions, input_transaction_state, re
 )
 def test_sort_by_date(input_list_of_transactions, input_sort_in_descending_order, return_list_of_transactions):
     assert sort_by_date(input_list_of_transactions, input_sort_in_descending_order) == return_list_of_transactions
+
+
+def test_filter_by_description(transactions):
+    result = filter_by_description(transactions, "Перевод организации")
+    assert len(result) == 3
+    assert result[0]["id"] == 441945886
+    assert result[1]["id"] == 41428829
+
+
+def test_count_transactions_by_category(transactions):
+    result = count_transactions_by_category(transactions, ["Перевод", "Организации"])
+    expected = Counter({"Перевод": 3, "Организации": 3})
+    assert result == expected

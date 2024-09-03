@@ -12,4 +12,4 @@ def test_list_from_json_valid_file(transactions):
             mock_exists.return_value = True
             result = list_from_json("test_path.json")
             assert result == transactions
-            mocked_open.assert_called_once_with("test_path.json")
+            mocked_open.assert_called_once_with("test_path.json", "r", encoding="utf-8")
